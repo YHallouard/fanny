@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro';
+import affiche from '../assets/nos_doudous/nos_doudous_affiche.jpeg';
+import illustration2 from '../assets/nos_doudous/nos_doudous_illustration_2.jpeg';
+import illustration3 from '../assets/nos_doudous/nos_doudous_illustration_3.jpeg';
+import illustration4 from '../assets/nos_doudous/nos_doudous_illustration_4.jpeg';
+import illustration5 from '../assets/nos_doudous/nos_doudous_illustration_5.jpeg';
+---
+
+<Layout title="Nos Doudous - Fanny Blanc">
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <a href="/" class="inline-block mb-8 text-accent hover:text-primary transition-colors">← Retour</a>
+    
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img 
+        src={affiche.src} 
+        alt="Affiche du film Nos Doudous" 
+        class="w-full h-auto"
+        loading="eager"
+      />
+      
+      <div class="p-8">
+        <h1 class="text-4xl font-bold mb-4 text-primary">Nos Doudous</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div>
+            <p class="text-xl mb-2">52 min</p>
+            <p class="text-xl">Documentaire</p>
+          </div>
+          
+          <div class="space-y-2">
+            <p><strong>Réalisé par</strong> Fanny Blanc</p>
+            <p><strong>Montage</strong> Mathieu Le Ray</p>
+            <p><strong>Image</strong> Eugénie Fragert et Fanny Blanc</p>
+            <p><strong>Son</strong> Mathieu Le Ray</p>
+            <p><strong>Produit par</strong> Les Studios du Héron</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mt-8">
+          <img src={illustration2.src} alt="Illustration du film Nos Doudous" class="w-full h-auto rounded" loading="lazy" />
+          <img src={illustration3.src} alt="Illustration du film Nos Doudous" class="w-full h-auto rounded" loading="lazy" />
+          <img src={illustration4.src} alt="Illustration du film Nos Doudous" class="w-full h-auto rounded" loading="lazy" />
+          <img src={illustration5.src} alt="Illustration du film Nos Doudous" class="w-full h-auto rounded" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

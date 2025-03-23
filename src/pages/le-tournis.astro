@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Import des images
+import affiche from '../assets/le_tournis/affiche_le_tournis.jpeg';
+import illustration1 from '../assets/le_tournis/illustration_le_tournis_1.jpeg';
+import illustration2 from '../assets/le_tournis/illustration_le_tournis_2.jpeg';
+import illustration3 from '../assets/le_tournis/illustration_le_tournis_3.jpeg';
+import illustration4 from '../assets/le_tournis/illustration_le_tournis_4.jpeg';
+---
+
+<Layout title="Le Tournis - Fanny Blanc">
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <a href="/" class="inline-block mb-8 text-blue-600 hover:text-blue-800">← Retour</a>
+    
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <!-- Affiche du film -->
+      <img 
+        src={affiche.src} 
+        alt="Affiche du film Le Tournis" 
+        class="w-full h-auto"
+        loading="eager"
+      />
+      
+      <div class="p-8">
+        <h1 class="text-4xl font-bold mb-4">Le Tournis</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div>
+            <p class="text-xl mb-2">25 min</p>
+            <p class="text-xl mb-2">Court-métrage documentaire</p>
+            <p class="text-xl">2025</p>
+          </div>
+          
+          <div>
+            <p class="mb-2"><strong>Réalisé par</strong> Fanny Blanc</p>
+            <p class="mb-2"><strong>Avec</strong> Delphine Gault</p>
+            <p class="mb-2"><strong>Produit par</strong> Les Studios du Héron</p>
+            <p><strong>Soutenu par</strong> ÀBLOCK!</p>
+          </div>
+        </div>
+
+        <!-- Illustrations -->
+        <div class="grid grid-cols-2 gap-4 mt-8">
+          <img 
+            src={illustration1.src} 
+            alt="Illustration du film Le Tournis" 
+            class="w-full h-auto rounded"
+            loading="lazy"
+          />
+          <img 
+            src={illustration2.src} 
+            alt="Illustration du film Le Tournis" 
+            class="w-full h-auto rounded"
+            loading="lazy"
+          />
+          <img 
+            src={illustration3.src} 
+            alt="Illustration du film Le Tournis" 
+            class="w-full h-auto rounded"
+            loading="lazy"
+          />
+          <img 
+            src={illustration4.src} 
+            alt="Illustration du film Le Tournis" 
+            class="w-full h-auto rounded"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

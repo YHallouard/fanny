@@ -1,0 +1,164 @@
+---
+import Layout from '../layouts/Layout.astro';
+import afficheTournis from '../assets/le_tournis/affiche_le_tournis.jpeg';
+import afficheDoudous from '../assets/nos_doudous/nos_doudous_affiche.jpeg';
+import afficheABlock from '../assets/a_block/a_block_affiche.jpeg';
+import logoFugues from '../assets/logos/FUGUES LOGO YOUTUBE.jpeg';
+import logoBlanc from '../assets/logos/logo blanc.jpeg';
+import logoCMJN from '../assets/logos/LOGO2_sansbaseline_CMJN.jpeg';
+import logoUne from '../assets/logos/une.jpeg';
+import backgroundImage from '../assets/background_home_page.avif';
+---
+
+<Layout title="Fanny Blanc - Vidéaste & Documentariste">
+  <main>
+    <!-- Hero Section avec background -->
+    <div class="relative h-screen">
+      <img 
+        src={backgroundImage.src} 
+        alt="" 
+        class="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
+      />
+      <div class="relative z-10 h-full flex items-center justify-center">
+        <div class="text-center">
+          <h1 class="text-6xl md:text-7xl font-bold mb-12 text-white drop-shadow-lg">Fanny Blanc</h1>
+          <p class="text-2xl md:text-3xl text-white max-w-3xl mx-auto leading-relaxed font-light drop-shadow-lg">
+            Raconter la vie des personnes, capter leurs histoires et les mettre en lumière grâce à l'image et au son.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- À propos -->
+    <div class="max-w-6xl mx-auto px-4 -mt-24 mb-32">
+      <details class="group bg-white/95 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden">
+        <summary class="p-8 cursor-pointer list-none">
+          <div class="flex items-center mb-4">
+            <h2 class="text-4xl font-bold text-primary flex-1">À propos</h2>
+            <svg 
+              class="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+          <p class="text-lg text-secondary line-clamp-2">
+            Après des études en sciences humaines et sociales (philosophie et anthropologie) puis en audiovisuel (BTS Image), j'ai débuté comme journaliste reporter d'images, notamment dans le sport féminin auprès du média ÀBLOCK!, soutenu par le Ministère de la Culture...
+          </p>
+        </summary>
+        <div class="px-8 pb-8">
+          <div class="prose prose-lg max-w-none text-secondary space-y-8 border-t border-gray-200 pt-6">
+            <p class="text-xl leading-relaxed">
+              Après des études en sciences humaines et sociales (philosophie et anthropologie) puis en audiovisuel (BTS Image), j'ai débuté comme journaliste reporter d'images, notamment dans le sport féminin auprès du média ÀBLOCK!, soutenu par le Ministère de la Culture.
+            </p>
+            <p class="text-xl leading-relaxed">
+              Peu à peu, je me suis pleinement orientée vers le documentaire, un format qui me permet d'explorer l'intimité des récits et de donner du temps aux histoires pour exister. J'ai co-fondé une association de production audiovisuelle, Les Studios du Héron, avec Eugénie Fraget et Mathieu Le Ray.
+            </p>
+            <p class="text-xl leading-relaxed">
+              J'aime créer et accompagner la mise en récit d'histoires, en explorant leur dimension intime à travers l'image et le son. Mon travail s'adapte à chaque projet : films d'auteur, reportages ou contenus sur mesure pour des entreprises et organisations.
+            </p>
+          </div>
+        </div>
+      </details>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4">
+      <!-- Documentaires -->
+      <section class="mb-32">
+        <h2 class="text-3xl font-bold mb-12 text-primary">Documentaires</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+          <a href="/le-tournis" class="group">
+            <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform group-hover:scale-105">
+              <img 
+                src={afficheTournis.src} 
+                alt="Affiche du film Le Tournis" 
+                class="w-full h-auto aspect-[3/4] object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 class="text-xl font-bold mb-2">Le Tournis</h3>
+                  <p class="text-sm">Court-métrage documentaire (2025)</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          
+          <a href="/nos-doudous" class="group">
+            <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform group-hover:scale-105">
+              <img 
+                src={afficheDoudous.src} 
+                alt="Affiche du film Nos Doudous" 
+                class="w-full h-auto aspect-[3/4] object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 class="text-xl font-bold mb-2">Nos Doudous</h3>
+                  <p class="text-sm">Documentaire 52 minutes</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="/a-block" class="group">
+            <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform group-hover:scale-105">
+              <img 
+                src={afficheABlock.src} 
+                alt="Affiche de À deux ÀBLOCK!" 
+                class="w-full h-auto aspect-[3/4] object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 class="text-xl font-bold mb-2">À deux ÀBLOCK!</h3>
+                  <p class="text-sm">Série documentaire</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="mb-32 flex justify-center">
+        <div class="bg-white rounded-2xl shadow-xl p-12 max-w-2xl w-full">
+          <h2 class="text-3xl font-bold mb-12 text-primary text-center">Contact</h2>
+          <div class="space-y-8">
+            <div class="text-center">
+              <strong class="block text-primary text-xl mb-4">E-mail</strong>
+              <a href="mailto:fannyi.blc@gmail.com" class="text-secondary hover:text-primary transition-colors text-lg">
+                fannyi.blc@gmail.com
+              </a>
+            </div>
+            <div class="text-center">
+              <strong class="block text-primary text-xl mb-4">Téléphone</strong>
+              <a href="tel:+33601445847" class="text-secondary hover:text-primary transition-colors text-lg">
+                06 01 44 58 47
+              </a>
+            </div>
+            <div class="text-center">
+              <strong class="block text-primary text-xl mb-4">Instagram</strong>
+              <a href="https://www.instagram.com/fannyblnc/" target="_blank" rel="noopener noreferrer" class="text-secondary hover:text-primary transition-colors text-lg">
+                @fannyblnc
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Collaborations -->
+    <section class="bg-black w-full">
+      <div class="max-w-6xl mx-auto py-20 px-4">
+        <h2 class="text-3xl font-bold mb-16 text-white text-center">Collaborations</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+          <img src={logoFugues.src} alt="Logo Fugues" class="w-full h-auto filter grayscale hover:grayscale-0 transition-all duration-300" />
+          <img src={logoBlanc.src} alt="Logo" class="w-full h-auto filter grayscale hover:grayscale-0 transition-all duration-300" />
+          <img src={logoCMJN.src} alt="Logo CMJN" class="w-full h-auto filter grayscale hover:grayscale-0 transition-all duration-300" />
+          <img src={logoUne.src} alt="Logo Une" class="w-full h-auto filter grayscale hover:grayscale-0 transition-all duration-300" />
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
