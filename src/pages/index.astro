@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import afficheDeuxMainsAMains from '../assets/deux_main_a_main/affiche_deux_main_a_main.jpeg';
 import afficheTournis from '../assets/le_tournis/affiche_le_tournis.jpeg';
 import afficheDoudous from '../assets/nos_doudous/nos_doudous_affiche.jpeg';
 import afficheABlock from '../assets/a_block/a_block_affiche.jpeg';
@@ -69,7 +70,23 @@ import backgroundImage from '../assets/background_home_page.avif';
       <!-- Documentaires -->
       <section class="mb-32">
         <h2 class="text-3xl font-bold mb-12 text-primary">Documentaires</h2>
-        <div class="grid md:grid-cols-3 gap-12">
+        <div class="grid md:grid-cols-4 gap-12">
+          <a href="/fanny/deux-mains-a-main" class="group">
+            <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform group-hover:scale-105">
+              <img 
+                src={afficheDeuxMainsAMains.src} 
+                alt="Affiche du film Deux Mains à Mains" 
+                class="w-full h-auto aspect-[3/4] object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 class="text-xl font-bold mb-2">Deux Mains à Mains</h3>
+                  <p class="text-sm">Film documentaire (2025)</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
           <a href="/fanny/le-tournis" class="group">
             <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform group-hover:scale-105">
               <img 

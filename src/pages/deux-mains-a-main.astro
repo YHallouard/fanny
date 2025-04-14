@@ -2,14 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 
 // Import des images
-import affiche from '../assets/le_tournis/affiche_le_tournis.jpeg';
-import illustration1 from '../assets/le_tournis/illustration_le_tournis_1.jpeg';
-import illustration2 from '../assets/le_tournis/illustration_le_tournis_2.jpeg';
-import illustration3 from '../assets/le_tournis/illustration_le_tournis_3.jpeg';
-import illustration4 from '../assets/le_tournis/illustration_le_tournis_4.jpeg';
+import affiche from '../assets/deux_main_a_main/affiche_deux_main_a_main.jpeg';
+import illustration1 from '../assets/deux_main_a_main/illustration_deux_main_a_main_1.jpeg';
+import illustration2 from '../assets/deux_main_a_main/illustration_deux_main_a_main_2.jpeg';
+import illustration3 from '../assets/deux_main_a_main/illustration_deux_main_a_main_3.jpeg';
+import illustration4 from '../assets/deux_main_a_main/illustration_deux_main_a_main_4.jpeg';
 ---
 
-<Layout title="Le Tournis - Fanny Blanc">
+<Layout title="Deux Mains à Mains - Fanny Blanc">
   <main class="max-w-4xl mx-auto px-4 py-12">
     <a href="/fanny" class="inline-block mb-8 text-blue-600 hover:text-blue-800">← Retour</a>
     
@@ -17,7 +17,7 @@ import illustration4 from '../assets/le_tournis/illustration_le_tournis_4.jpeg';
       <!-- Affiche du film -->
       <img 
         src={affiche.src} 
-        alt="Affiche du film Le Tournis" 
+        alt="Affiche du film Deux mains à Mains" 
         class="w-full h-auto"
         loading="eager"
       />
@@ -27,25 +27,27 @@ import illustration4 from '../assets/le_tournis/illustration_le_tournis_4.jpeg';
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div>
-            <p class="text-xl mb-2">25 min</p>
-            <p class="text-xl mb-2">Court-métrage documentaire</p>
+            <p class="text-xl mb-2">52 min</p>
+            <p class="text-xl mb-2">Film documentaire</p>
             <p class="text-xl">2025</p>
           </div>
           
           <div>
             <p class="mb-2"><strong>Réalisé par</strong> Fanny Blanc</p>
-            <p class="mb-2"><strong>Avec</strong> Delphine Gault</p>
+            <p class="mb-2"><strong>Avec</strong> Marine Boyer</p>
             <p class="mb-2"><strong>Produit par</strong> Les Studios du Héron</p>
+            <p class="mb-2"><strong>Image</strong> Fanny Balnc & Mathieu Le Ray</p>
+            <p class="mb-2"><strong>Musique</strong> Eugénie Fragert</p>
             <p><strong>Soutenu par</strong> ÀBLOCK!</p>
           </div>
         </div>
-
+        
         <!-- Bande Annonce -->
         <div class="aspect-video w-full mb-8">
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/ymqx60qr1B0"
+            src="https://www.youtube.com/embed/vZp715m2s74"
             title="Bande annonce À deux ÀBLOCK!"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -58,25 +60,25 @@ import illustration4 from '../assets/le_tournis/illustration_le_tournis_4.jpeg';
         <div class="grid grid-cols-2 gap-4 mt-8">
           <img 
             src={illustration1.src} 
-            alt="Illustration du film Le Tournis" 
+            alt="Illustration du film Deux Mains à Mains" 
             class="w-full h-auto rounded"
             loading="lazy"
           />
           <img 
             src={illustration2.src} 
-            alt="Illustration du film Le Tournis" 
+            alt="Illustration du film Deux Mains à Mains" 
             class="w-full h-auto rounded"
             loading="lazy"
           />
           <img 
             src={illustration3.src} 
-            alt="Illustration du film Le Tournis" 
+            alt="Illustration du film Deux Mains à Mains" 
             class="w-full h-auto rounded"
             loading="lazy"
           />
           <img 
             src={illustration4.src} 
-            alt="Illustration du film Le Tournis" 
+            alt="Illustration du film Deux Mains à Mains" 
             class="w-full h-auto rounded"
             loading="lazy"
           />
